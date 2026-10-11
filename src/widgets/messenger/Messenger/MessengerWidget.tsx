@@ -36,9 +36,6 @@ function MessengerWidget({ session }: { session: Session }) {
           <span className={styles.logo} title="Green Chat">
             <MessageCircle size={25} strokeWidth={1.7} />
           </span>
-          <span className={styles.active} aria-label="Сообщения">
-            <MessageCircle size={21} />
-          </span>
           <div className={styles.bottom}>
             <DisconnectFeature />
             <span className={styles.me} title="Мой аккаунт">
