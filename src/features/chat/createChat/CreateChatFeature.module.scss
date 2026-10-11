@@ -1,0 +1,11 @@
+.description {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}

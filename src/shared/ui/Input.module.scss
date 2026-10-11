@@ -1,0 +1,40 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  input {
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    color: var(--ink);
+    padding: 12px 14px;
+    font-size: 14px;
+    &:focus {
+      border-color: var(--accent);
+    }
+    &::placeholder {
+      color: var(--muted);
+      opacity: 0.7;
+    }
+  }
+  input.invalid {
+    border-color: var(--danger);
+  }
+}
+.hint,
+.error {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.hint {
+  color: var(--muted);
+}
+.error {
+  color: var(--danger);
+}

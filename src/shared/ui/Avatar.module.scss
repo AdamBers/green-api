@@ -1,0 +1,28 @@
+.avatar {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.large {
+  width: 52px;
+  height: 52px;
+  font-size: 16px;
+}
+.tone0 {
+  background: var(--avatar-green);
+}
+.tone1 {
+  background: var(--avatar-blue);
+}
+.tone2 {
+  background: var(--avatar-purple);
+}
+.tone3 {
+  background: var(--avatar-orange);
+}

@@ -1,0 +1,47 @@
+.logo {
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  margin-bottom: 28px;
+}
+.active {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.me {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--avatar-green);
+  color: var(--accent-ink);
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+}
+.connectionError {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 20px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 12px;
+  button {
+    border: 0;
+    background: transparent;
+    color: inherit;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,191 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--line);
+  min-height: 89px;
+}
+.identity {
+  flex: 1;
+  min-width: 0;
+  h2 {
+    font-size: 15px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+  }
+  span {
+    display: block;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+}
+.channel {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+.back {
+  display: none;
+}
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 14px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-size: 10px;
+}
+.canvas {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+  background-color: var(--canvas);
+  background-image: radial-gradient(var(--pattern) 0.65px, transparent 0.65px);
+  background-size: 18px 18px;
+}
+.safety {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 19px 16px 0;
+  font-size: 10px;
+  color: var(--muted);
+  text-align: center;
+}
+.messages {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 40px 30px;
+  flex: 1;
+  min-height: 0;
+}
+.day {
+  align-self: center;
+  color: var(--muted);
+  font-size: 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 6px 12px;
+  margin: 23px 0 10px;
+}
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex: 1;
+  color: var(--muted);
+  padding: 32px;
+  text-align: center;
+}
+.noMessages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  text-align: center;
+  > span {
+    width: 44px;
+    height: 44px;
+    background: var(--surface);
+    color: var(--accent);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}
+.welcome {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--surface-soft);
+  h2 {
+    font-size: 31px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin: 17px 0 13px;
+  }
+  p {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.8;
+  }
+}
+.welcomeIcon {
+  width: 130px;
+  height: 130px;
+  display: grid;
+  place-items: center;
+  border-radius: 40px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  margin-bottom: 37px;
+  transform: rotate(-7deg);
+  svg {
+    transform: rotate(7deg);
+  }
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+}
+.welcomeBottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 60px;
+}
+@media (max-width: 720px) {
+  .header {
+    padding: 14px 12px;
+    min-height: 76px;
+    gap: 8px;
+  }
+  .back {
+    display: inline-flex;
+  }
+  .channel {
+    display: none;
+  }
+  .messages {
+    padding-inline: 16px;
+  }
+  .demo {
+    font-size: 9px;
+  }
+  .safety {
+    font-size: 9px;
+    padding-top: 14px;
+  }
+}

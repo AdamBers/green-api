@@ -1,0 +1,42 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 11px 18px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.primary {
+  background: var(--accent);
+  color: var(--white);
+  &:hover {
+    background: var(--accent-hover);
+  }
+}
+.secondary {
+  background: var(--surface);
+  border-color: var(--line);
+  &:hover {
+    background: var(--surface-soft);
+  }
+}
+.ghost {
+  background: transparent;
+  color: var(--muted);
+  &:hover {
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+  }
+}
+.icon {
+  width: 44px;
+  padding: 10px;
+}
+.button:disabled {
+  opacity: 0.5;
+}

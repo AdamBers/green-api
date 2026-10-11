@@ -1,0 +1,24 @@
+.dialog {
+  width: min(440px, calc(100% - 32px));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 24px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  &::backdrop {
+    background: var(--backdrop);
+    backdrop-filter: blur(3px);
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 21px;
+    letter-spacing: -0.5px;
+  }
+}
